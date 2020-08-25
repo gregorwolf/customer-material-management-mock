@@ -10,6 +10,13 @@
       "request": "launch",
       "type": "node-terminal",
       "skipFiles": [ "<node_internals>/**" ]
+    },
+    {
+      "command": "cds import srv/external/API_PRODUCT_SRV.edmx ",
+      "name": "cds import",
+      "request": "launch",
+      "type": "node-terminal",
+      "skipFiles": [ "<node_internals>/**" ]
     }
   ]
 }
