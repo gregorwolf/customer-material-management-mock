@@ -1,0 +1,4 @@
+### Read Customer Material
+GET http://localhost:4004/api-customer-material-srv/A_CustomerMaterial
+### Read Customer Material OData V2
+GET http://localhost:4004/v2/api-customer-material-srv/A_CustomerMaterial

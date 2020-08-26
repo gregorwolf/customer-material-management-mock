@@ -1,0 +1,4 @@
+### Read Products
+GET http://localhost:4004/api-product-srv/A_Product
+### Read Products OData V2
+GET http://localhost:4004/v2/api-product-srv/A_Product
