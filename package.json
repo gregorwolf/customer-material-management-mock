@@ -42,6 +42,13 @@
       "db": {
         "kind": "hana"
       }
+    },
+    "[development]": {
+      "requires": {
+        "db": {
+           "kind": "sqlite"
+        }
+      }
     }
   }
 }

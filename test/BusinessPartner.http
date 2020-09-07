@@ -16,6 +16,10 @@ GET http://localhost:4004/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_CustomerSales
 GET http://localhost:4004/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='1000021',AddressID='24134')
 
 
+### Read Business Partner V2
+GET https://908489e8trial-dev-customer-material-management-mock-srv.cfapps.us10.hana.ondemand.com/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner?$expand=to_Customer,to_Customer/to_CustomerSalesArea
+
+
 ### Read Business Partner Mock
 GET http://localhost:4004/api-business-partner/A_BusinessPartner
 ### Read Business Partner Mock OData V2

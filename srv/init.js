@@ -39,12 +39,12 @@ module.exports = (db)=>{
     DELETE.from(A_Product).where('1 = 1'),
     DELETE.from(A_CustomerMaterial).where('1 = 1'),
     */
-    INSERT.into(A_BusinessPartner),entries(BusinessPartner),
-    INSERT.into(A_BusinessPartnerAddress),entries(BusinessPartnerAddress),
-    INSERT.into(A_Customer),entries(Customer),
-    INSERT.into(A_CustomerSalesArea),entries(CustomerSalesArea),
-    INSERT.into(A_CustomerCompany),entries(CustomerCompany),
-    INSERT.into(A_Product),entries(Product),
-    INSERT.into(A_CustomerMaterial),entries(CustomerMaterial),
+    INSERT.into(A_BusinessPartner).rows(BusinessPartner),
+    INSERT.into(A_BusinessPartnerAddress).rows(BusinessPartnerAddress),
+    INSERT.into(A_Customer).rows(Customer),
+    INSERT.into(A_CustomerSalesArea).rows(CustomerSalesArea),
+    INSERT.into(A_CustomerCompany).rows(CustomerCompany),
+    INSERT.into(A_Product).rows(Product),
+    INSERT.into(A_CustomerMaterial).rows(CustomerMaterial),
   ])
 }
