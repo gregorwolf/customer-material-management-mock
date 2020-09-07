@@ -3,7 +3,7 @@ using { API_BUSINESS_PARTNER as externalBusinessPartner } from './external/API_B
 using { API_CUSTOMER_MATERIAL_SRV as externalCustomerMaterial } from './external/API_CUSTOMER_MATERIAL_SRV.csn';
 
 
-service BusinessPartnerService {
+service BusinessPartnerService @(path:'/API_BUSINESS_PARTNER') {
   @cds.persistence.skip:false
 	@cds.persistence.table
   entity A_BusinessPartnerAddress : externalBusinessPartner.A_BusinessPartnerAddress {

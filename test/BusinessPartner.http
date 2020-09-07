@@ -1,13 +1,12 @@
 ### 
 GET http://localhost:4004/
 ### Read Business Partner 
-GET http://localhost:4004/business-partner/A_BusinessPartner
+GET http://localhost:4004/API_BUSINESS_PARTNER/A_BusinessPartner
 
 ### Read Business Partner V2
-GET http://localhost:4004/v2/business-partner/A_BusinessPartner?$expand=to_Customer,to_Customer/to_CustomerSalesArea
-
+GET http://localhost:4004/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner?$expand=to_Customer,to_Customer/to_CustomerSalesArea
 ### Read Customer Sales Area V2
-GET http://localhost:4004/v2/business-partner/A_CustomerSalesArea
+GET http://localhost:4004/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_CustomerSalesArea
 
 
 

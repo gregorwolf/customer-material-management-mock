@@ -20,13 +20,13 @@ module.exports = (db)=>{
   const { 
     A_Product 
   } = db.entities(
-    'API_PRODUCT_SRV'
+    'ProductService'
   )
 
   const { 
     A_CustomerMaterial 
   } = db.entities(
-    'API_CUSTOMER_MATERIAL_SRV'
+    'CustomerMaterialService'
   )
 
   return cds.run ([
@@ -35,9 +35,7 @@ module.exports = (db)=>{
     INSERT.into(A_Customer).entries(Customer),
     INSERT.into(A_CustomerSalesArea).entries(CustomerSalesArea),
     INSERT.into(A_CustomerCompany).entries(CustomerCompany),
-    /*
     INSERT.into(A_Product).entries(Product),
     INSERT.into(A_CustomerMaterial).entries(CustomerMaterial),
-    */
   ])
 }
