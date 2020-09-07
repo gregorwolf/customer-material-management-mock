@@ -14,7 +14,7 @@ module.exports = (db)=>{
     A_CustomerSalesArea, 
     A_CustomerCompany 
   } = db.entities(
-    'API_BUSINESS_PARTNER'
+    'BusinessPartnerService'
   )
 
   const { 
@@ -35,7 +35,9 @@ module.exports = (db)=>{
     INSERT.into(A_Customer).entries(Customer),
     INSERT.into(A_CustomerSalesArea).entries(CustomerSalesArea),
     INSERT.into(A_CustomerCompany).entries(CustomerCompany),
+    /*
     INSERT.into(A_Product).entries(Product),
     INSERT.into(A_CustomerMaterial).entries(CustomerMaterial),
+    */
   ])
 }

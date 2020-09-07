@@ -1,4 +1,23 @@
-### Read Business Partner
+### 
+GET http://localhost:4004/
+### Read Business Partner 
+GET http://localhost:4004/business-partner/A_BusinessPartner
+
+### Read Business Partner V2
+GET http://localhost:4004/v2/business-partner/A_BusinessPartner?$expand=to_Customer,to_Customer/to_CustomerSalesArea
+
+### Read Customer Sales Area V2
+GET http://localhost:4004/v2/business-partner/A_CustomerSalesArea
+
+
+
+### Read Business Partner Mock
 GET http://localhost:4004/api-business-partner/A_BusinessPartner
-### Read Business Partner OData V2
+### Read Business Partner Mock OData V2
 GET http://localhost:4004/v2/api-business-partner/A_BusinessPartner
+### Read Business Partner Mock and Customer OData V2
+GET http://localhost:4004/v2/api-business-partner/A_BusinessPartner?$expand=to_Customer
+
+
+### Read Customer OData V2
+GET http://localhost:4004/v2/api-business-partner/A_Customer?$expand=to_CustomerSalesArea
