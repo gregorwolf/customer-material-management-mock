@@ -1,9 +1,9 @@
 ### Read Customer Material
-GET http://localhost:4004/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial
+GET http://localhost:3000/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial
 ### Read Customer Material V2
-GET http://localhost:4004/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial
+GET http://localhost:3000/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial
 
 ### Read Customer Material Mock
-GET http://localhost:4004/api-customer-material-srv/A_CustomerMaterial
+GET http://localhost:3000/api-customer-material-srv/A_CustomerMaterial
 ### Read Customer Material Mock OData V2
-GET http://localhost:4004/v2/api-customer-material-srv/A_CustomerMaterial
+GET http://localhost:3000/v2/api-customer-material-srv/A_CustomerMaterial
