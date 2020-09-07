@@ -30,12 +30,21 @@ module.exports = (db)=>{
   )
 
   return cds.run ([
-    INSERT.into(A_BusinessPartner).entries(BusinessPartner),
-    INSERT.into(A_BusinessPartnerAddress).entries(BusinessPartnerAddress),
-    INSERT.into(A_Customer).entries(Customer),
-    INSERT.into(A_CustomerSalesArea).entries(CustomerSalesArea),
-    INSERT.into(A_CustomerCompany).entries(CustomerCompany),
-    INSERT.into(A_Product).entries(Product),
-    INSERT.into(A_CustomerMaterial).entries(CustomerMaterial),
+    /*
+    DELETE.from(A_BusinessPartner).where('1 = 1'),
+    DELETE.from(A_BusinessPartnerAddress).where('1 = 1'),
+    DELETE.from(A_Customer).where('1 = 1'),
+    DELETE.from(A_CustomerSalesArea).where('1 = 1'),
+    DELETE.from(A_CustomerCompany).where('1 = 1'),
+    DELETE.from(A_Product).where('1 = 1'),
+    DELETE.from(A_CustomerMaterial).where('1 = 1'),
+    */
+    INSERT.into(A_BusinessPartner),entries(BusinessPartner),
+    INSERT.into(A_BusinessPartnerAddress),entries(BusinessPartnerAddress),
+    INSERT.into(A_Customer),entries(Customer),
+    INSERT.into(A_CustomerSalesArea),entries(CustomerSalesArea),
+    INSERT.into(A_CustomerCompany),entries(CustomerCompany),
+    INSERT.into(A_Product),entries(Product),
+    INSERT.into(A_CustomerMaterial),entries(CustomerMaterial),
   ])
 }

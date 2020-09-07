@@ -5,7 +5,7 @@
 _schema-version: '3.1'
 ID: customer-material-management-mock
 version: 1.0.0
-description: "A simple CAP project."
+description: "Mock service for customer material management"
 parameters:
   enable-parallel-deployments: true
    
@@ -17,15 +17,32 @@ build-parameters:
       - npx -p @sap/cds-dk cds build --production
 
 modules:
+ - name: customer-material-management-mock-db
+   type: hdb
+   path: gen/db
+   parameters:
+     memory: 256M
+     disk-quota: 256M
+   requires:
+     - name: customer-material-management-mock-db-service
  # --------------------- SERVER MODULE ------------------------
  - name: customer-material-management-mock-srv
  # ------------------------------------------------------------
    type: nodejs
    path: gen/srv
+   parameters:
+     memory: 256M
+     disk-quota: 1024M
    provides:
     - name: srv-api      # required by consumers of CAP services (e.g. approuter)
       properties:
         srv-url: ${default-url}
+   requires:
+     - name: customer-material-management-mock-db-service
 
-
+resources:
+ - name: customer-material-management-mock-db-service
+   type: com.sap.xs.hdi-container
+   properties:
+     hdi-container-name: ${service-name}
 

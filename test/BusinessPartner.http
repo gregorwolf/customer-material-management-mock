@@ -1,5 +1,9 @@
-### 
-GET http://localhost:4004/
+### Reset Data
+POST http://localhost:4004/API_BUSINESS_PARTNER/reset
+Content-Type: application/json
+
+{}
+
 ### Read Business Partner 
 GET http://localhost:4004/API_BUSINESS_PARTNER/A_BusinessPartner
 
@@ -8,6 +12,8 @@ GET http://localhost:4004/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartn
 ### Read Customer Sales Area V2
 GET http://localhost:4004/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_CustomerSalesArea
 
+### Read Business Partner Address
+GET http://localhost:4004/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='1000021',AddressID='24134')
 
 
 ### Read Business Partner Mock

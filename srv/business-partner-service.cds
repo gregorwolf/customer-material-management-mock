@@ -26,4 +26,6 @@ service BusinessPartnerService @(path:'/API_BUSINESS_PARTNER') {
 	@cds.persistence.table
   entity A_CustomerSalesArea: externalBusinessPartner.A_CustomerSalesArea{
   };
+
+  action reset();
 }

@@ -1,24 +1,31 @@
 {
   "name": "customer-material-management-mock",
   "version": "1.0.0",
-  "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
-  "license": "UNLICENSED",
-  "private": true,
+  "description": "Mock service for customer material management",
+  "repository": "https://github.com/gregorwolf/customer-material-management-mock",
+  "license": "Apache 2.0",
+  "private": false,
   "dependencies": {
     "@sap/cds": "^4.1.9",
     "@sap/cds-dk": "^3.0.0",
     "@sap/cds-odata-v2-adapter-proxy": "^1.4.44",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "@sap/hana-client": "^2.5.109"
   },
   "devDependencies": {
     "sqlite3": "^5.0.0"
   },
   "scripts": {
-    "start": "DEBUG=y npx cds run --in-memory",
-    "start:mocked": "npx cds run --in-memory --with-mocks "
+    "start": "npx cds run",
+    "start:debug": "DEBUG=y npx cds run --in-memory",
+    "start:mocked": "npx cds run --in-memory --with-mocks",
+    "build:cf": "mbt build",
+    "deploy:cf": "cf deploy mta_archives/customer-material-management-mock_1.0.0.mtar"
   },
   "cds": {
+    "hana": {
+      "deploy-format": "hdbtable"
+    },
     "requires": {
       "API_PRODUCT_SRV": {
         "kind": "odata",
@@ -33,7 +40,7 @@
         "model": "srv/external/API_CUSTOMER_MATERIAL_SRV"
       },
       "db": {
-        "kind": "sqlite"
+        "kind": "hana"
       }
     }
   }
