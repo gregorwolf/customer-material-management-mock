@@ -6,10 +6,11 @@
   "configurations": [
     {
       "command": "cds run",
-      "name": "cds run",
+      "name": "npm start",
       "request": "launch",
       "type": "node-terminal",
-      "skipFiles": [ "<node_internals>/**" ]
+      "skipFiles": [ "<node_internals>/**" ],
+      "env": {"PORT": "3000"}
     },
     {
       "command": "cds import srv/external/API_PRODUCT_SRV.edmx ",
