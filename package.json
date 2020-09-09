@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "npx cds run",
-    "start:hana": "DEBUG=y PORT=4000 NODE_ENV=production npx cds run --in-memory",
+    "start:hana": "DEBUG=y PORT=4000 NODE_ENV=production npx cds run",
     "start:debug": "DEBUG=y PORT=4000 npx cds run --in-memory",
     "start:mocked": "npx cds run --in-memory --with-mocks",
     "build:cf": "mbt build",
