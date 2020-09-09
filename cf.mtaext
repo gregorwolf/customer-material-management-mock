@@ -5,4 +5,4 @@ extends: customer-material-management-mock
 resources:
   - name: customer-material-management-mock-db-service
     parameters:
-      service: hanatrial
+      service: hana

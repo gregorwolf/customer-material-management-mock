@@ -44,5 +44,5 @@ resources:
  - name: customer-material-management-mock-db-service
    type: com.sap.xs.hdi-container
    properties:
+     service: hanatrial
      hdi-container-name: ${service-name}
-
