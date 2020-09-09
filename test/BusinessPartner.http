@@ -1,19 +1,19 @@
 ### Reset Data
-POST http://localhost:3000/API_BUSINESS_PARTNER/reset
+POST http://localhost:4000/API_BUSINESS_PARTNER/reset
 Content-Type: application/json
 
 {}
 
 ### Read Business Partner 
-GET http://localhost:3000/API_BUSINESS_PARTNER/A_BusinessPartner
+GET http://localhost:4000/API_BUSINESS_PARTNER/A_BusinessPartner
 
 ### Read Business Partner V2
-GET http://localhost:3000/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner?$expand=to_Customer,to_Customer/to_CustomerSalesArea
+GET http://localhost:4000/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner?$expand=to_Customer,to_Customer/to_CustomerSalesArea
 ### Read Customer Sales Area V2
-GET http://localhost:3000/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_CustomerSalesArea
+GET http://localhost:4000/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_CustomerSalesArea
 
 ### Read Business Partner Address
-GET http://localhost:3000/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='1000021',AddressID='24134')
+GET http://localhost:4000/API_BUSINESS_PARTNER/A_BusinessPartnerAddress(BusinessPartner='1000021',AddressID='24134')
 
 
 ### Read Business Partner V2
@@ -21,12 +21,12 @@ GET https://908489e8trial-dev-customer-material-management-mock-srv.cfapps.us10.
 
 
 ### Read Business Partner Mock
-GET http://localhost:3000/api-business-partner/A_BusinessPartner
+GET http://localhost:4000/api-business-partner/A_BusinessPartner
 ### Read Business Partner Mock OData V2
-GET http://localhost:3000/v2/api-business-partner/A_BusinessPartner
+GET http://localhost:4000/v2/api-business-partner/A_BusinessPartner
 ### Read Business Partner Mock and Customer OData V2
-GET http://localhost:3000/v2/api-business-partner/A_BusinessPartner?$expand=to_Customer
+GET http://localhost:4000/v2/api-business-partner/A_BusinessPartner?$expand=to_Customer
 
 
 ### Read Customer OData V2
-GET http://localhost:3000/v2/api-business-partner/A_Customer?$expand=to_CustomerSalesArea
+GET http://localhost:4000/v2/api-business-partner/A_Customer?$expand=to_CustomerSalesArea

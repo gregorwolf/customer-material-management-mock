@@ -1,10 +1,10 @@
 ### Read Product
-GET http://localhost:4004/API_PRODUCT_SRV/A_Product
+GET http://localhost:4000/API_PRODUCT_SRV/A_Product
 ### Read Product V2
-GET http://localhost:4004/sap/opu/odata/sap/API_PRODUCT_SRV/A_Product
+GET http://localhost:4000/sap/opu/odata/sap/API_PRODUCT_SRV/A_Product
 
 
 ### Read Products
-GET http://localhost:4004/api-product-srv/A_Product
+GET http://localhost:4000/api-product-srv/A_Product
 ### Read Products OData V2
-GET http://localhost:4004/v2/api-product-srv/A_Product
+GET http://localhost:4000/v2/api-product-srv/A_Product

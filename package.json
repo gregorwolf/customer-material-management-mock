@@ -17,7 +17,8 @@
   },
   "scripts": {
     "start": "npx cds run",
-    "start:debug": "DEBUG=y PORT=3000 npx cds run --in-memory",
+    "start:hana": "DEBUG=y PORT=4000 NODE_ENV=production npx cds run --in-memory",
+    "start:debug": "DEBUG=y PORT=4000 npx cds run --in-memory",
     "start:mocked": "npx cds run --in-memory --with-mocks",
     "build:cf": "mbt build",
     "deploy:cf-trial": "cf deploy mta_archives/customer-material-management-mock_1.0.0.mtar",
