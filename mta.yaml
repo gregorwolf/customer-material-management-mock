@@ -43,6 +43,8 @@ modules:
 resources:
  - name: customer-material-management-mock-db-service
    type: com.sap.xs.hdi-container
+   parameters:
+     service: hanatrial  # 'hana' or 'hanatrial' on trial landscapes
+     service-plan: hdi-shared
    properties:
-     service: hanatrial
      hdi-container-name: ${service-name}
