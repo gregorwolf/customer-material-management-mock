@@ -8,6 +8,7 @@ module.exports = cds.service.impl (srv => {
   })
 
   srv.before('READ', 'A_BusinessPartnerAddress', req => {
+    console.log(req.data)
     const { BusinessPartner, AddressID:ID } = req.data
     if (BusinessPartner === '1000023' && ID === '24134')
       req.reject (500, 'Your error message.')

@@ -10,7 +10,7 @@
       "request": "launch",
       "type": "node-terminal",
       "skipFiles": [ "<node_internals>/**" ],
-      "env": {"PORT": "3000"}
+      "env": {"PORT": "4000"}
     },
     {
       "command": "cds import srv/external/API_PRODUCT_SRV.edmx ",
