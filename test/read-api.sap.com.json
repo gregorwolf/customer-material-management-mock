@@ -1,0 +1,58 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1010',DistributionChannel='10',Customer='10100001',Material='TG12')",
+          "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1010',DistributionChannel='10',Customer='10100001',Material='TG12')",
+          "type": "API_CUSTOMER_MATERIAL_SRV.A_CustomerMaterialType",
+          "etag": "W/\"''\""
+        },
+        "SalesOrganization": "1010",
+        "DistributionChannel": "10",
+        "Customer": "10100001",
+        "Material": "TG12",
+        "MaterialByCustomer": "HANACT1"
+      },
+      {
+        "__metadata": {
+          "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1010',DistributionChannel='10',Customer='10100009',Material='TG11')",
+          "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1010',DistributionChannel='10',Customer='10100009',Material='TG11')",
+          "type": "API_CUSTOMER_MATERIAL_SRV.A_CustomerMaterialType",
+          "etag": "W/\"''\""
+        },
+        "SalesOrganization": "1010",
+        "DistributionChannel": "10",
+        "Customer": "10100009",
+        "Material": "TG11",
+        "MaterialByCustomer": "CUS_DE_TG11"
+      },
+      {
+        "__metadata": {
+          "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1010',DistributionChannel='10',Customer='10100080',Material='TG0011')",
+          "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1010',DistributionChannel='10',Customer='10100080',Material='TG0011')",
+          "type": "API_CUSTOMER_MATERIAL_SRV.A_CustomerMaterialType",
+          "etag": "W/\"''\""
+        },
+        "SalesOrganization": "1010",
+        "DistributionChannel": "10",
+        "Customer": "10100080",
+        "Material": "TG0011",
+        "MaterialByCustomer": "SP001"
+      },
+      {
+        "__metadata": {
+          "id": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1010',DistributionChannel='10',Customer='10100081',Material='TG0011')",
+          "uri": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1010',DistributionChannel='10',Customer='10100081',Material='TG0011')",
+          "type": "API_CUSTOMER_MATERIAL_SRV.A_CustomerMaterialType",
+          "etag": "W/\"''\""
+        },
+        "SalesOrganization": "1010",
+        "DistributionChannel": "10",
+        "Customer": "10100081",
+        "Material": "TG0011",
+        "MaterialByCustomer": "SP001"
+      }
+    ]
+  }
+}

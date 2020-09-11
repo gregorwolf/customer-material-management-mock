@@ -1,5 +1,7 @@
 ### Read Customer Material
 GET http://localhost:4000/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial
+### Read Customer Material as XML
+GET http://localhost:4000/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial?$format=xml
 ### Read Customer Material including Count
 GET http://localhost:4000/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial?$count=true&$select=Material,MaterialByCustomer&$skip=0&$top=30
 
@@ -8,3 +10,19 @@ GET http://localhost:4000/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_Customer
 
 ### Read Single Customer Material V2
 GET http://localhost:4000/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial%28SalesOrganization%3D%271710%27%2CDistributionChannel%3D%2710%27%2CCustomer%3D%271000021%27%2CMaterial%3D%27TG11%27%29
+
+### Read Customer Material V2
+GET http://localhost:4000/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial?%24top=4&%24select=SalesOrganization,DistributionChannel,Customer,Material,MaterialByCustomer
+Accept: application/json
+### Read CAP Mocked
+GET {{$dotenv SAPCPURL}}/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial?%24top=4&%24select=SalesOrganization,DistributionChannel,Customer,Material,MaterialByCustomer
+Accept: application/json
+
+### Read Original Service
+GET https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial?%24top=4&%24select=SalesOrganization,DistributionChannel,Customer,Material,MaterialByCustomer
+APIKey: {{$dotenv APIKEY}}
+
+### Read Original Service
+GET https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial?%24top=4&%24select=SalesOrganization,DistributionChannel,Customer,Material,MaterialByCustomer
+APIKey: {{$dotenv APIKEY}}
+Accept: application/json

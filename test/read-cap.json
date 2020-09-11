@@ -1,0 +1,50 @@
+{
+  "d": {
+    "results": [
+      {
+        "SalesOrganization": "1710",
+        "DistributionChannel": "10",
+        "Customer": "1000021",
+        "Material": "TG11",
+        "MaterialByCustomer": "CUS_DE_TG11",
+        "__metadata": {
+          "uri": "https://ba932c42trial-dev-customer-material-management-mock-srv.cfapps.eu10.hana.ondemand.com:8080/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1710',DistributionChannel='10',Customer='1000021',Material='TG11')",
+          "type": "CustomerMaterialService.A_CustomerMaterial"
+        }
+      },
+      {
+        "SalesOrganization": "1710",
+        "DistributionChannel": "10",
+        "Customer": "1000021",
+        "Material": "TG12",
+        "MaterialByCustomer": "HANACT1",
+        "__metadata": {
+          "uri": "https://ba932c42trial-dev-customer-material-management-mock-srv.cfapps.eu10.hana.ondemand.com:8080/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1710',DistributionChannel='10',Customer='1000021',Material='TG12')",
+          "type": "CustomerMaterialService.A_CustomerMaterial"
+        }
+      },
+      {
+        "SalesOrganization": "1710",
+        "DistributionChannel": "10",
+        "Customer": "1000046",
+        "Material": "SG35",
+        "MaterialByCustomer": "SP001",
+        "__metadata": {
+          "uri": "https://ba932c42trial-dev-customer-material-management-mock-srv.cfapps.eu10.hana.ondemand.com:8080/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1710',DistributionChannel='10',Customer='1000046',Material='SG35')",
+          "type": "CustomerMaterialService.A_CustomerMaterial"
+        }
+      },
+      {
+        "SalesOrganization": "1710",
+        "DistributionChannel": "10",
+        "Customer": "1000046",
+        "Material": "TG0011",
+        "MaterialByCustomer": "SP001",
+        "__metadata": {
+          "uri": "https://ba932c42trial-dev-customer-material-management-mock-srv.cfapps.eu10.hana.ondemand.com:8080/sap/opu/odata/sap/API_CUSTOMER_MATERIAL_SRV/A_CustomerMaterial(SalesOrganization='1710',DistributionChannel='10',Customer='1000046',Material='TG0011')",
+          "type": "CustomerMaterialService.A_CustomerMaterial"
+        }
+      }
+    ]
+  }
+}
