@@ -6,11 +6,11 @@
   "license": "Apache 2.0",
   "private": false,
   "dependencies": {
-    "@sap/cds": "^4.1.9",
-    "@sap/cds-dk": "^3.0.0",
-    "@sap/cds-odata-v2-adapter-proxy": "^1.4.44",
+    "@sap/cds": "^4.2.4",
+    "@sap/cds-dk": "^3.1.2",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.4.50",
     "express": "^4.17.1",
-    "@sap/hana-client": "^2.5.109"
+    "@sap/hana-client": "^2.6.58"
   },
   "devDependencies": {
     "sqlite3": "^5.0.0"
@@ -49,7 +49,7 @@
     "[development]": {
       "requires": {
         "db": {
-           "kind": "sqlite"
+          "kind": "sqlite"
         }
       }
     }
