@@ -4,6 +4,13 @@ Content-Type: application/json
 
 {}
 
+### Reset Data
+POST {{$dotenv SAPCPURL}}/API_BUSINESS_PARTNER/reset
+Content-Type: application/json
+
+{}
+
+
 ### Read Business Partner 
 GET http://localhost:4000/API_BUSINESS_PARTNER/A_BusinessPartner
 
