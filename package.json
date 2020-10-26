@@ -23,7 +23,7 @@
     "build:cf": "mbt build",
     "deploy:cf-trial": "cf deploy mta_archives/customer-material-management-mock_1.0.0.mtar",
     "deploy:cf": "cf deploy mta_archives/customer-material-management-mock_1.0.0.mtar -e cf.mtaext",
-    "undeploy:cf": "cf undeploy customer-material-management-mock --delete-services --delete-service-brokers"
+    "undeploy:cf": "cf undeploy customer-material-management-mock --delete-services --delete-service-brokers --delete-service-keys"
   },
   "cds": {
     "hana": {
